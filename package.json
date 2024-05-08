@@ -1,8 +1,9 @@
 {
   "name": "handball-berichte",
-  "private": true,
-  "version": "0.0.1",
   "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.0.6",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -23,6 +24,5 @@
   "devDependencies": {
     "@antfu/eslint-config": "^2.16.2",
     "eslint": "^9.2.0"
-  },
-  "packageManager": "pnpm@9.0.6"
+  }
 }
