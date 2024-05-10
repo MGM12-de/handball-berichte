@@ -8,8 +8,16 @@ response.value = await useAsyncData(`${orgId.value}-reports`, () => $fetch(`/api
 
 <template>
   <div>
-    <UBlogList orientation="horizontal">
-      <UBlogPost v-for="(post, index) in response.data" :key="index" v-bind="post" />
+    <UBlogList orientation="horizontal" prose>
+      <UBlogPost
+        v-for="(post, index) in response.data" :key="index"
+        :title="post.title"
+        :description="post.description"
+        :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
+        :image="post.image"
+        :to="post.link"
+        :badge="post.badge"
+      />
     </UBlogList>
   </div>
 </template>

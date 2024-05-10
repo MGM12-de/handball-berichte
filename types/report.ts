@@ -1,5 +1,5 @@
 export interface Report {
-  id: number,
+  id: string,
   date: Date,
   link: string,
   title: string,
@@ -8,5 +8,8 @@ export interface Report {
   image: {
     src: string,
     alt: string
-  }
+  },
+  badge: {
+    label: string
+  },
 }

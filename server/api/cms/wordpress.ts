@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
   const wpReports = await $fetch(`https://${query.baseUrl}/wp-json/wp/v2/posts?_embed`) as Array<any>
   
   reports = wpReports.map((report: any) => {
-    return {
+    let convertedReport: Report = {
       id: report.id,
       date: new Date(report.date),
       link: report.link,
@@ -13,10 +13,25 @@ export default defineEventHandler(async (event) => {
       content: report.content.rendered,
       description: report.excerpt.rendered,
       image: {
-        src: report._embedded['wp:featuredmedia'][0]?.source_url,
-        alt: report._embedded['wp:featuredmedia'][0]?.alt_text
+        src: '',
+        alt: ''
+      },
+      badge: {
+        label: ''
       }
     }
+    if (report._embedded['wp:featuredmedia'])
+    {
+      convertedReport.image = {
+        src: report._embedded['wp:featuredmedia'][0].source_url,
+        alt: report._embedded['wp:featuredmedia'][0].alt_text
+      }
+    }
+
+    if (report._embedded['wp:term']){
+      convertedReport.badge.label = report._embedded['wp:term'][0].map(term => term.name).join(", ")
+    }
+    return convertedReport
   })
   return reports
 })
