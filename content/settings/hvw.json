@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sgheuchelberg",
+    "name": "SG Heuchelberg",
+    "website": {
+      "url": "sgheuchelberg.de",
+      "type": "wordpress"
+    }
+  },
+  {
+    "id": "tsbhorkheim",
+    "name": "TSB Horkheim",
+    "website": {
+      "url": "tsb-horkheim-hunters.de",
+      "type": "wordpress"
+    }
+  }
+]

@@ -13,7 +13,7 @@ const links = [{
   to: '/reports'
 },{
   label: 'HVW',
-  icon: 'i-heroicons-home',
+  icon: 'i-heroicons-newspaper',
   to: '/reports/hvw'
 }]
 </script>
