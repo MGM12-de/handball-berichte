@@ -43,6 +43,7 @@ for (const setting of orgSettings.body ) {
           to: setting.website.url
         }
       }]
+      report.id += `-${setting.id}`
     });
     reports = [...reports, ...clubReports]
   }

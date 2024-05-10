@@ -15,7 +15,7 @@ response.value = await useAsyncData(`${orgId.value}-reports`, () => $fetch(`/api
         :description="post.description"
         :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
         :image="post.image"
-        :to="post.link"
+        :to="`/reports/${orgId}/detail/${post.id}`"
         :badge="post.badge"
         :authors="post.authors"
       />
