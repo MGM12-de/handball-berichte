@@ -7,8 +7,8 @@ const slug = ref(route.params.slug[0])
 const postId = ref(slug.value.split('-')[0])
 const clubId = ref(slug.value.split('-')[1])
 
-const { data: post, pending, error, refresh } = await useAsyncData(
-  'post',
+const { data: post } = await useAsyncData(
+  `post-${slug.value}`,
   () => $fetch(`/api/${orgId.value}/report`, {
     query: {
       postId: postId.value,
