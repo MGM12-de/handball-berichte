@@ -55,6 +55,8 @@ const { data: post } = await useAsyncData(
     <UPage>
       <UPageBody prose>
         <div v-html="post.content" />
+        <br>
+        <span>Quelle: <NuxtLink :to="post.link" target="_blank" rel="noopener">{{ post.link }}</NuxtLink></span>
       </UPageBody>
     </UPage>
   </UContainer>

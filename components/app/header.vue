@@ -10,11 +10,14 @@ const links = [{
 },{
   label: 'Berichte',
   icon: 'i-heroicons-newspaper',
-  to: '/reports'
-},{
+  to: '/reports',
+  children: [
+  {
   label: 'HVW',
   icon: 'i-heroicons-newspaper',
   to: '/reports/hvw'
+}
+  ]
 }]
 </script>
 
