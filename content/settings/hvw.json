@@ -14,5 +14,13 @@
       "url": "tsb-horkheim-hunters.de",
       "type": "wordpress"
     }
+  },
+  {
+    "id": "sportunionneckarsulm",
+    "name": "Sportunion Neckarsulm",
+    "website": {
+      "url": "handball.su-neckarsulm.de/",
+      "type": "wordpress"
+    }
   }
 ]
