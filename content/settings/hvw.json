@@ -5,7 +5,8 @@
     "website": {
       "url": "sgheuchelberg.de",
       "type": "wordpress"
-    }
+    },
+    "logo": "https://www.sgheuchelberg.de/wp-content/uploads/2020/11/SGH_Logo.png"
   },
   {
     "id": "tsbhorkheim",
@@ -13,7 +14,8 @@
     "website": {
       "url": "tsb-horkheim-hunters.de",
       "type": "wordpress"
-    }
+    },
+    "logo": "https://tsb-horkheim-hunters.de/wp-content/uploads/2022/09/TSB-Logo-Hunters_logo_225x180.png"
   },
   {
     "id": "sportunionneckarsulm",
@@ -21,6 +23,7 @@
     "website": {
       "url": "handball.su-neckarsulm.de/",
       "type": "wordpress"
-    }
+    },
+    "logo": "https://handball.su-neckarsulm.de/wp-content/uploads/sites/2/2021/08/SU_Neckarsulm_Logo_Icon_Blau-e1627997219465.png"
   }
 ]

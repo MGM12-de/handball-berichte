@@ -12,4 +12,12 @@ export interface Report {
   badge: {
     label: string
   },
+  authors: {
+    name: string,
+    avatar: {
+      src: string,
+      target: string,
+      to: string
+    }
+  }[]
 }

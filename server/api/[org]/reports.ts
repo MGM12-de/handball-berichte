@@ -34,6 +34,16 @@ for (const setting of orgSettings.body ) {
       break;
   } 
   if(clubReports){
+    clubReports.forEach(report => {
+      report.authors = [{
+        name: setting.name,
+        avatar: {
+          target: '_blank',
+          src: setting.logo,
+          to: setting.website.url
+        }
+      }]
+    });
     reports = [...reports, ...clubReports]
   }
 }

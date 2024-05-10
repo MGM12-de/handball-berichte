@@ -17,6 +17,7 @@ response.value = await useAsyncData(`${orgId.value}-reports`, () => $fetch(`/api
         :image="post.image"
         :to="post.link"
         :badge="post.badge"
+        :authors="post.authors"
       />
     </UBlogList>
   </div>
