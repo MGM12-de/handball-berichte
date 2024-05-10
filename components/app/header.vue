@@ -7,6 +7,14 @@ const links = [{
   label: 'Home',
   icon: 'i-heroicons-home',
   to: '/'
+},{
+  label: 'Berichte',
+  icon: 'i-heroicons-newspaper',
+  to: '/reports'
+},{
+  label: 'HVW',
+  icon: 'i-heroicons-home',
+  to: '/reports/hvw'
 }]
 </script>
 
