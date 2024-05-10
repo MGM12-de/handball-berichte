@@ -16,6 +16,14 @@ const { data: post } = await useAsyncData(
     },
   }),
 )
+
+useSeoMeta({
+  title: post.title,
+  ogTitle: post.title,
+  description: post.description,
+  ogDescription: post.description,
+  ogImage: post.image,
+})
 </script>
 
 <template>
