@@ -5,8 +5,11 @@
 <template>
   <div>
     <AppHeader />
-    <div>
-      <slot />
+
+    <div class="pt-5">
+      <UContainer>
+        <slot />
+      </UContainer>
     </div>
     <AppFooter />
   </div>

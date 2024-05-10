@@ -7,8 +7,11 @@ response.value = await useAsyncData(`${orgId.value}-reports`, () => $fetch(`/api
 </script>
 
 <template>
-  <div />
-  {{ response.data }}
+  <div>
+    <UBlogList orientation="horizontal">
+      <UBlogPost v-for="(post, index) in response.data" :key="index" v-bind="post" />
+    </UBlogList>
+  </div>
 </template>
 
 <style>

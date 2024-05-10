@@ -2,13 +2,11 @@ export interface Report {
   id: number,
   date: Date,
   link: string,
-  title: {
-    rendered: string
-  },
-  content: {
-    rendered: string
-  },
-  excerpt: {
-    rendered: string
-  },
+  title: string,
+  content: string,
+  description: string,
+  image: {
+    src: string,
+    alt: string
+  }
 }
