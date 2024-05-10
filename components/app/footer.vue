@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [{
   label: 'Nuxt UI',
-  to: 'https://ui.nuxt.com/'
+  to: 'https://ui.nuxt.com/',
 }]
 </script>
 
@@ -16,4 +16,3 @@ const links = [{
     </template>
   </UFooter>
 </template>
-
