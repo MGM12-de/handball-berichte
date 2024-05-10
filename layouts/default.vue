@@ -1,19 +1,16 @@
+<script lang="ts" setup>
+
+</script>
+
 <template>
   <div>
     <AppHeader />
     <div>
-      <UContainer>
-
-        <slot />
-      </UContainer>
+      <slot />
     </div>
     <AppFooter />
   </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style>
 
