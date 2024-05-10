@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
       link: report.link,
       title: report.title.rendered,
       content: report.content.rendered,
-      description: report.excerpt.rendered,
+      description: report.excerpt.rendered.replace(/<[^>]*>/g, ""),
       image: {
         src: '',
         alt: ''
@@ -20,6 +20,7 @@ export default defineEventHandler(async (event) => {
         label: ''
       }
     }
+    convertedReport.description = convertedReport.description.replace('[&hellip;]', '...')
     if (report._embedded['wp:featuredmedia'])
     {
       convertedReport.image = {
