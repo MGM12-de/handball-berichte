@@ -3,7 +3,7 @@
 import { serverQueryContent } from '#content/server'
 
 export default defineEventHandler(async (event) => {
-  let reports = []
+  let reports: Report[] = []
   const organization = getRouterParam(event, 'org')
 
   const settings = await serverQueryContent(event).find()
@@ -18,7 +18,7 @@ export default defineEventHandler(async (event) => {
 }
 
 for (const setting of orgSettings.body ) {
-  var clubReports = null
+  var clubReports: Report[] = []
   switch (setting.website.type) {
 
     case 'wordpress':
