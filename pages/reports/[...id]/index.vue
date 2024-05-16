@@ -4,6 +4,22 @@ const response = ref(null)
 
 const orgId = ref(route.params.id)
 response.value = await useAsyncData(`${orgId.value}-reports`, () => $fetch(`/api/${orgId.value}/reports`))
+
+const title = orgId.value
+const description = `Berichte für den Bereich ${orgId.value}`
+
+useSeoMeta({
+  title,
+  ogTitle: title,
+  description,
+  ogDescription: description,
+})
+defineOgImage({
+  component: 'Saas',
+  title,
+  description,
+  headline: 'Blog',
+})
 </script>
 
 <template>
