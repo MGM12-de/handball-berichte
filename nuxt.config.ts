@@ -4,6 +4,15 @@ import { pwa } from "./config/pwa";
 export default defineNuxtConfig({
   devtools: { enabled: true },
   extends: ['@nuxt/ui-pro'],
-  modules: ["@nuxt/content", "@nuxt/ui", "@nuxt/image", '@vite-pwa/nuxt'],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/ui",
+    "@nuxt/image",
+    '@vite-pwa/nuxt',
+    "nuxt-og-image"
+  ],
+  site: {
+    url: 'https://handball-berichte.netlify.app'
+  },
   pwa
 })

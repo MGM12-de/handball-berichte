@@ -24,6 +24,13 @@ useSeoMeta({
   ogDescription: post.description,
   ogImage: post.image,
 })
+
+defineOgImage({
+  component: 'Saas',
+  title: post.title,
+  description: post.description,
+  headline: 'Blog',
+})
 </script>
 
 <template>
