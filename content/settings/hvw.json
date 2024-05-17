@@ -26,12 +26,20 @@
     },
     "logo": "https://handball.su-neckarsulm.de/wp-content/uploads/sites/2/2021/08/SU_Neckarsulm_Logo_Icon_Blau-e1627997219465.png"
   }, {
-"id": "sgschobott",
-"name": "SG Schozach-Bottwartal",
-"website": {
-"url": "sg-schozach-bottwartal.de",
-"type": "wordpress"
-},
-"logo": "https://sg-schozach-bottwartal.de/wp-content/uploads/2022/11/cropped-SGSB_Logo.jpg"
-}
+    "id": "sgschobott",
+    "name": "SG Schozach-Bottwartal",
+    "website": {
+      "url": "sg-schozach-bottwartal.de",
+      "type": "wordpress"
+    },
+    "logo": "https://sg-schozach-bottwartal.de/wp-content/uploads/2022/11/cropped-SGSB_Logo.jpg"
+  }, {
+    "id": "tsvweinsberg",
+    "name": "TSV Weinsberg",
+    "website": {
+      "url": "handball-weinsberg.de",
+      "type": "wordpress"
+    },
+    "logo": "https://handball-weinsberg.de/wp-content/uploads/2017/05/TSV-Logo-80.png"
+  }
 ]
