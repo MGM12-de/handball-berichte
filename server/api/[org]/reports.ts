@@ -17,17 +17,15 @@ export default defineEventHandler(async (event) => {
     })
 }
 
-for (const setting of orgSettings.body ) {
+let promises = orgSettings.body.map(async (setting) => {
   var clubReports: Report[] = []
   switch (setting.website.type) {
-
     case 'wordpress':
       clubReports = await $fetch('/api/cms/wordpress', {
         query: {
           baseUrl: setting.website.url,
         },
-        }
-      )
+      })
       break;
   
     default:
@@ -45,9 +43,16 @@ for (const setting of orgSettings.body ) {
       }]
       report.id += `-${setting.id}`
     });
-    reports = [...reports, ...clubReports]
+    return clubReports;
   }
-}
+  return [];
+});
+
+// Wait for all promises to resolve
+let results = await Promise.all(promises);
+
+// Flatten the array of arrays into a single array
+reports = [].concat(...results);
 
 reports.sort((a, b) => new Date(b.date) - new Date(a.date))
   return reports
