@@ -2,7 +2,7 @@ export default defineEventHandler(async (event) => {
   var reports: Report[] = []
   const query = getQuery(event)
 
-  const wpReports = await $fetch(`https://${query.baseUrl}/wp-json/wp/v2/posts?_embed`) as Array<any>
+  const wpReports = await $fetch(`https://${query.baseUrl}/wp-json/wp/v2/posts?_embed&per_page=3`) as Array<any>
   
   reports = wpReports.map((report: any) => {
     let convertedReport: Report = {
