@@ -1,2 +1,2 @@
 [images]
-  remote_images = ["https://*"]
+remote_images = [ "https://*" ]
