@@ -16,6 +16,10 @@ const links = [{
   label: 'HVW',
   icon: 'i-heroicons-newspaper',
   to: '/reports/hvw'
+}, {
+  label: 'BHV',
+  icon: 'i-heroicons-newspaper',
+  to: '/reports/bhv'
 }
   ]
 }]
