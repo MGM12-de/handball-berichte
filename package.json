@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.2",
   "private": true,
-  "packageManager": "pnpm@9.1.1",
+  "packageManager": "pnpm@9.2.0",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -26,8 +26,8 @@
     "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.0",
-    "@vite-pwa/nuxt": "^0.7.0",
-    "eslint": "^9.2.0"
+    "@antfu/eslint-config": "^2.21.0",
+    "@vite-pwa/nuxt": "^0.8.0",
+    "eslint": "^9.4.0"
   }
 }
