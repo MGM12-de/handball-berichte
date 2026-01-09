@@ -15,10 +15,9 @@
     "generate-pwa-assets": "pwa-assets-generator --preset minimal-2023 public/logo.png"
   },
   "dependencies": {
-    "@nuxt/content": "^2.13.4",
+    "@nuxt/content": "^3.10.0",
     "@nuxt/image": "^2.0.0",
     "@nuxt/ui": "^4.3.0",
-    "@nuxt/ui-pro": "^3.3.7",
     "@vite-pwa/assets-generator": "^1.0.2",
     "nuxt": "^4.2.2",
     "nuxt-og-image": "3.1.1",
