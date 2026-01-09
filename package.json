@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.11.2",
-    "@vite-pwa/nuxt": "^0.10.6",
+    "@vite-pwa/nuxt": "^1.1.0",
     "eslint": "^9.16.0"
   }
 }
