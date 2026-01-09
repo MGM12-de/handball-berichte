@@ -4,20 +4,14 @@
 
 <template>
   <div>
-    <ULandingHero
-      title="Handball Berichte"
+    <UPageHero title="Handball Berichte"
       description="Diese Seite zeigt verschiedene Handballberichte von verschiedenen Vereinen an. Die Berichte werden dabei von den Vereinshompages gelesen."
-      orientation="horizontal"
-    >
+      orientation="horizontal">
       <template #default>
-        <LazyNuxtImg
-          src="/logo.png" height="450px" width="auto"
-        />
+        <LazyNuxtImg src="/logo.png" height="450px" width="auto" />
       </template>
-    </ULandingHero>
+    </UPageHero>
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>

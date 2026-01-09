@@ -24,21 +24,12 @@ defineOgImage({
 
 <template>
   <div>
-    <UBlogList orientation="horizontal" prose>
-      <UBlogPost
-        v-for="(post, index) in response.data" :key="index"
-        :title="post.title"
-        :description="post.description"
+    <UBlogPosts orientation="horizontal" prose>
+      <UBlogPost v-for="(post, index) in response.data" :key="index" :title="post.title" :description="post.description"
         :date="new Date(post.date).toLocaleDateString('en', { year: 'numeric', month: 'short', day: 'numeric' })"
-        :image="post.image"
-        :to="`/reports/${orgId}/detail/${post.id}`"
-        :badge="post.badge"
-        :authors="post.authors"
-      />
-    </UBlogList>
+        :image="post.image" :to="`/reports/${orgId}/detail/${post.id}`" :badge="post.badge" :authors="post.authors" />
+    </UBlogPosts>
   </div>
 </template>
 
-<style>
-
-</style>
+<style></style>
