@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt',
     'nuxt-og-image',
   ],
-  css: ['~/app/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   site: {
     url: 'https://handball-berichte.netlify.app',
   },

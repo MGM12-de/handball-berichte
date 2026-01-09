@@ -26,10 +26,10 @@ useSeoMeta({
 </script>
 
 <template>
-  <div>
+  <UApp>
     <NuxtLayout>
       <NuxtPwaManifest />
       <NuxtPage />
     </NuxtLayout>
-  </div>
+  </UApp>
 </template>
